@@ -1,9 +1,21 @@
+import { ToDoItem } from "./ToDoItem";
 
 
-function ToDoList(props) {
+function ToDoList({defaultToDos}) {
   return (
     <ul>
-      {props.children}
+     
+        {defaultToDos.map(toDo =>{
+         return (
+          <ToDoItem 
+          key={toDo.text} 
+          text={toDo.text}
+          completed={toDo.completed}
+          />
+         )
+        })
+        }
+      
     </ul>
   )
 }

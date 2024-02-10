@@ -1,10 +1,11 @@
 
 
-function ToDoItem(props) {
+function ToDoItem({text, completed}) {
+
   return (
-    <li>
+    <li >
       <span>V</span>
-      <p>Hacer ejercicio</p>
+      <p>{text}</p>
       <span>X</span>
     </li>
   )

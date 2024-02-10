@@ -1,9 +1,9 @@
+import '../styles/ToDoChecks.scss';
 
-
-function ToDoChecks() {
+function ToDoChecks({completed, total}) {
   return (
     <span>
-       <h2>Has completado 3 de 5 tareas!</h2>
+       <h2 className="checkTitle">Has completado {completed} de {total} tareas!</h2>
     </span>
   )
 }

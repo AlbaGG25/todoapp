@@ -3,7 +3,14 @@ import {ToDoChecks} from './ToDoChecks.js';
 import {ToDoList} from './ToDoList.js';
 import {ToDoItem} from './ToDoItem.js';
 import {ButtonNewToDo } from './ButtonNewToDo.js';
-import '../App.css';
+import '../styles/App.scss';
+
+const defaultToDos=[
+  {text: 'Ir a la compra', completed: false},
+  {text: 'Ir a fisioterapia', completed: true},
+  {text: 'Comprar libros', completed: false},
+  {text: 'Comer fuera', completed: true},
+]
 
 function App() {
   return (
@@ -16,12 +23,10 @@ function App() {
 
       <ToDoInput />
 
-      <ToDoChecks />
+      <ToDoChecks completed={16} total={30}/>
 
-      <ToDoList>
-        <ToDoItem />
-        <ToDoItem />
-        <ToDoItem />
+      <ToDoList defaultToDos={defaultToDos} >
+        
       </ToDoList>
 
       <ButtonNewToDo />
