@@ -1,12 +1,12 @@
-
+import '../styles/layout/ToDoItem.scss';
 
 function ToDoItem({text, completed}) {
 
   return (
-    <li >
-      <span>V</span>
-      <p>{text}</p>
-      <span>X</span>
+    <li className="element" >
+      <span className="element__check">V</span>
+      <p className="element__text">{text}</p>
+      <span className="element__x">X</span>
     </li>
   )
 }

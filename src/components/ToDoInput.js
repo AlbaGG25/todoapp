@@ -1,10 +1,10 @@
-
+import '../styles/layout/ToDoInput.scss';
 
 function ToDoInput() {
   return (
-    <>
-      <input type="text" placeholder="Ir a fisioterapia"></input>
-    </>
+    <div className="box">
+      <input type="text" placeholder="Ir a fisioterapia" className="box__input"></input>
+    </div>
   )
 }
 

@@ -1,9 +1,8 @@
 import {ToDoInput} from './ToDoInput.js';
 import {ToDoChecks} from './ToDoChecks.js';
 import {ToDoList} from './ToDoList.js';
-import {ToDoItem} from './ToDoItem.js';
 import {ButtonNewToDo } from './ButtonNewToDo.js';
-import '../styles/App.scss';
+import '../styles/layout/App.scss';
 
 const defaultToDos=[
   {text: 'Ir a la compra', completed: false},
@@ -14,10 +13,10 @@ const defaultToDos=[
 
 function App() {
   return (
-    <div className="App">
+    <div className="App main">
       <header className="App-header">
         <h1>
-          ToDo's App
+          Create your own ToDo's List
         </h1>
       </header>
 

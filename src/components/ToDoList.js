@@ -1,9 +1,11 @@
 import { ToDoItem } from "./ToDoItem";
+import '../styles/layout/ToDoList.scss';
+
 
 
 function ToDoList({defaultToDos}) {
   return (
-    <ul>
+    <ul className="list">
      
         {defaultToDos.map(toDo =>{
          return (

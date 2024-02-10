@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+};
+
+
+.App-header {
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,0.486453956582633) 0%, rgba(253,187,45,0.7469581582633054) 100%);
+  min-height: 10vh;
+  padding: 2rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100%; 
+};
+
+
+
+
+
+

@@ -1,9 +1,9 @@
-
+import '../styles/layout/ButtonNewToDo.scss';
 
 function ButtonNewToDo() {
   return (
     <>
-      <button type="submit" >+</button>
+      <button type="submit" className='createButton'>+</button>
     </>
   )
 }

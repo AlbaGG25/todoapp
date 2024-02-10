@@ -1,4 +1,4 @@
-import '../styles/ToDoChecks.scss';
+import '../styles/layout/ToDoChecks.scss';
 
 function ToDoChecks({completed, total}) {
   return (
