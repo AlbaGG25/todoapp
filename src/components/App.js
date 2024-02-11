@@ -9,11 +9,11 @@ import '../styles/layout/App.scss';
 
 const defaultToDos=[
   {text: 'Ir a la compra', completed: false},
-  {text: 'Ir a fisioterapia', completed: true},
+  {text: 'Ir a fisioterapia', completed: false},
   {text: 'Comprar libros', completed: false},
   {text: 'Comer fuera', completed: true},
   {text: 'Terminar curso', completed: true},
-]
+];
 
 
 function App() {
@@ -49,9 +49,9 @@ const deleteToDos = (text)=>{
   const todoIndex = newToDos.findIndex(
     (todo)=> todo.text === text
   );
-  newToDos[todoIndex].splice(todoIndex, 1); 
+  newToDos.splice(todoIndex, 1); 
   setToDos(newToDos);
-}
+};
 
   return (
     <div className="App main">

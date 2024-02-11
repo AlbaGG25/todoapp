@@ -1,3 +1,5 @@
+import { CompleteIcon } from "./CompleteIcon";
+import { DeleteIcon } from "./DeleteIcon";
 import '../styles/layout/ToDoItem.scss';
 
 function ToDoItem({text, completed,  toDos, done, deleteToDos}) {
@@ -5,10 +7,11 @@ function ToDoItem({text, completed,  toDos, done, deleteToDos}) {
 
   return (
     <li className="element" >
-      <span className={`element__check ${completed && 'checkedOn'}`}  onClick={()=>done(text)} 
-      >V</span>
+      <CompleteIcon completed={completed} onClick={()=>done(text)}/>
+      
       <p className={`element__text ${completed && 'checkedOn'}`}>{text}</p>
-      <span className={`element__x`}  onClick={()=> deleteToDos(text)} >X</span>
+      {/* <span className={`element__x`}  >X</span> */}
+      <DeleteIcon  onClick={()=> deleteToDos(text)}/>
     </li>
   )
 }

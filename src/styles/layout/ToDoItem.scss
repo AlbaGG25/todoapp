@@ -9,25 +9,25 @@
   margin: auto;
 
   &__check {
+    width: 1.5rem;
     margin-right: 2rem;
     font-size: 2rem;
-    
+    cursor: pointer;
   }
   &__text {
     font-size: 1.5rem;
   }
-  &__x {
+  &__delete {
     width: 1.5rem;
-    background-color: darkred;
-    color: white;
     padding: 0.2rem;
     border-radius: 50%;
     margin-left: 2rem;
+    cursor: pointer;
   }
 };
 
 .checkedOn{
   text-decoration: line-through;
-  color: green;
+
   font-weight: bold;
 };
