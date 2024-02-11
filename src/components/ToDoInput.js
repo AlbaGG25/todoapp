@@ -1,9 +1,14 @@
 import '../styles/layout/ToDoInput.scss';
 
-function ToDoInput() {
+function ToDoInput({handleSearch, searchValue}) {
+  const handleInput=(event)=>{
+    handleSearch(event.target.value);
+    console.log (event.target.value);
+  }
+
   return (
     <div className="box">
-      <input type="text" placeholder="Ir a fisioterapia" className="box__input"></input>
+      <input value = {searchValue}type="text" placeholder="Ir a fisioterapia" className="box__input" onChange={handleInput}></input>
     </div>
   )
 }

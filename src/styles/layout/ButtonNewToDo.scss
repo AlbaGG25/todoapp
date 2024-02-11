@@ -1,10 +1,18 @@
 .createButton {
-  width: 2rem;
+  width: 3rem;
   margin-top: 3rem;
-  background-color: blue;
+  margin-bottom: 5rem;
+  background-color: lightskyblue;
   color: white;
   padding: 0.5rem;
   border-radius: 50%;
   border: none;
   font-weight: bold;
+  font-size: 2rem;
+  
 };
+
+.createButton:hover{
+    transition: transform .25s, opacity .25s;
+    transform: rotate(360deg);
+  }
